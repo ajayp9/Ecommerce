@@ -28,8 +28,8 @@ const placeOrder = async (req, res) => {
     const orderData = {
       userId,
       items,
-      amount,
       address,
+      amount,
       paymentMethod:"COD",
       payment: false,
       data: Date.now()
@@ -39,6 +39,7 @@ const placeOrder = async (req, res) => {
 
     await userModel.findByIdAndUpdate(userId,{cartData:{}})
     res.json({success:true,message:"Order Placed Successfully"})
+    
   } catch (error) {
     console.log(error);
     res.json({success:false,message:error.message})
@@ -126,8 +127,8 @@ const placeOrderRazorpay = async (req, res) => {
     const orderData = {
       userId,
       items,
-      amount,
       address,
+      amount,
       paymentMethod:"Razorpay",
       payment: false,
       data: Date.now()
