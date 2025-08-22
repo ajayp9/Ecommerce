@@ -1,7 +1,7 @@
 
-# 🛒 E-Commerce Website with Admin Panel  
+# 🛒 E-Forever Website with Admin Panel  
 
-An **E-Commerce Web Application** built using the **MERN stack (MongoDB, Express.js, React, Node.js)**.  
+An **E-Forever Web Application** built using the **MERN stack (MongoDB, Express.js, React, Node.js)**.
 This project has **three modules**:  
 
 1. **Backend (Node.js + Express + MongoDB)** – RESTful API  
